@@ -1,23 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import Wrapper from './components/Wrapper';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Wrapper color="lightblue">
+        <h2>Text inside of the wrapper</h2>
+        <button>Click me!</button>
+      </Wrapper>
+      <Wrapper color="lightgreen">
+        <h2>Another text</h2>
+        <p>some description</p>
+        <input type="text" placeholder="Enter value" />
+      </Wrapper>
+      <Wrapper color="lightgreen">
+        <h2>Cat picture</h2>
+        <img src="https://mobimg.b-cdn.net/v3/fetch/c4/c493aac67877288476b0fc52d55f55cf.jpeg" alt="" style={{"width": "60%"}}/>
+        <input type="number" placeholder="Enter number" />
+      </Wrapper>
     </div>
   );
 }
